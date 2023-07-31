@@ -11,7 +11,8 @@ The goal is to detect guitars in images using YOLOv8 model. YOLOv8 is a state-of
 
 The dataset has been created by me. First, the copyright free images were collected from websites. Thereafter, they were annotated carefully using free labelling softwares available online. Attention was paid during labelling to maintain consistency of annotations. Cross-checking was done several times to avoid any discrepancy and ensuring the quality of the dataset.
 
-![annotations given for val object detection guitar using yolov8](https://github.com/shu-nya/Object-Detection-using-YOLOv8-on-Custom-Dataset/assets/115604932/5443dc2a-a6bd-4f2b-9fa7-c778582217b5)
+![train_batch0 object detection guitar using yolov8](https://github.com/shu-nya/Object-Detection-using-YOLOv8-on-Custom-Dataset/assets/115604932/c45bdb7e-9e1e-4e45-9808-3cc88c8a23bc)
+
 
 
 The dataset has 2 folders:
