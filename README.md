@@ -1,12 +1,18 @@
 # Object-Detection-using-YOLOv8-on-Custom-Dataset
 
-## Objective
+![fender-g90e421d20_1280](https://github.com/shu-nya/Object-Detection-using-YOLOv8-on-Custom-Dataset/assets/115604932/913b011b-ad79-4bc9-80ac-4ed1bdc1a3dc)
+
+
+## 🎸 Objective 🎸
 
 The goal is to detect guitars in images using YOLOv8 model. YOLOv8 is a state-of-the-art YOLO model that can be used for object detection, image classification, and instance segmentation tasks. YOLOv8 is fast, accurate, and easy to use. In this project, it has been used to detect guitars.
 
-## Dataset
+## 🎸 Dataset 🎸
 
 The dataset has been created by me. First, the copyright free images were collected from websites. Thereafter, they were annotated carefully using free labelling softwares available online. Attention was paid during labelling to maintain consistency of annotations. Cross-checking was done several times to avoid any discrepancy and ensuring the quality of the dataset.
+
+![annotations given for val object detection guitar using yolov8](https://github.com/shu-nya/Object-Detection-using-YOLOv8-on-Custom-Dataset/assets/115604932/5443dc2a-a6bd-4f2b-9fa7-c778582217b5)
+
 
 The dataset has 2 folders:
 
@@ -38,7 +44,7 @@ Guitar_dataset
 
 Note: Object detection requires large datasets. In this project, only in-built augmentation available with the YOLOv8 model during training has been used on the dataset. An analysis of the quality of augmentation has not been performed, as it is an iterative process and requires a lot of trial and error to get the right quality of augmentation. Also, the quality of augmentation plays a major role in the quality of predictions in object detection.
 
-## Training
+## 🎸 Training 🎸
 
 YOLOv8 has been custom trained to detect guitars. The training has been done in Google Colab by reading the dataset from Google Drive.
 
@@ -51,7 +57,7 @@ YOLOv8 has been custom trained to detect guitars. The training has been done in 
 7. Run Inference with the custom YOLOv8 Object Detector Trained Weights
 8. Visualize the Predictions by plotting the validation images and their predicted bounding boxes
 
-## Inference
+## 🎸 Inference 🎸
 
 On the validation set, the following values of metrics have been obtained:
 
@@ -60,23 +66,23 @@ On the validation set, the following values of metrics have been obtained:
 3. mAP50 = around 0.995
 4. mAP50-95 = around 0.874
 
+
+![results object detection guitar using yolov8](https://github.com/shu-nya/Object-Detection-using-YOLOv8-on-Custom-Dataset/assets/115604932/bb4fae6a-021f-4f26-87ec-2f142b01cf7e)
+
 Based on the evaluation metrics, the model is showing a decent performance which is also evident in the plotted images and their predicted bounding boxes. 
 
 From the plot of the prediction, it is observed that the Recall is high (100%) as all the guitar images have been identified by the model. However, there is some issue of Precision, as in a couple of images, the model has made double predictions for the same guitar image. It may have been caused due to the side ways view of the guitar. Note that, care was taken to annotate the images of guitar only for the front view of guitar even in case the side view was visible along with the front view. This has been done to prevent any confusion for the model.
 
 The model is able to get a good mAP value which is a widely used object detection metric for object detection models. This implies that the model is making a prediction of the bounding box that has a large Intersection over Union with the ground truth annotations provided with the validation images.
 
-## Conclusion
+![annotations predicted object detection using yolov8](https://github.com/shu-nya/Object-Detection-using-YOLOv8-on-Custom-Dataset/assets/115604932/12e5d1e0-2ef5-4d36-9361-5344fb95f5c8)
+
+
+## 🎸 Conclusion 🎸
 
 Overall, the tasks performed in the project include creation of the dataset, then the object (guitar) detection, and finally the evaluation of the model's performance. The performance of the model can be improved by increasing the number and variety of the images in the dataset. Also, the number of classes can be increased by annotating the present images for other classes and also including more images and labelling them.
 
-## Reference
+## 🎸 Reference 🎸
 
 https://github.com/ultralytics/ultralytics
-
-
-
-
-
-
 
